@@ -1,0 +1,28 @@
+{
+  "name": "widget",
+  "version": "1.0.0",
+  "description": "Setup Gumroad Widgets",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src/link.js src/overlay.js src/gumroad.js -o lib/gumroad.js"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "author": "Elvio Vicosa",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-remove-import-export": "^1.1.1",
+    "babel-preset-minify": "^0.5.1",
+    "jest": "^26.6.3"
+  }
+}
