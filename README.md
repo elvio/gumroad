@@ -2,7 +2,7 @@
 
 This project enables websites to display Gumroad products in an overlay. It means potential customers can buy products without leaving the website.
 
-Visit https://gumroad.elviovicosa.com to see it working.
+Visit https://gumroad.elviovicosa.com and click on one of the "Buy it now for ..." buttons to see it working.
 
 ---
 
