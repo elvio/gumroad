@@ -6,7 +6,7 @@ test("appends stylesheets", () => {
             <head></head>
         </html>
     `;
-    
+
     let overlay = new Overlay("localhost");
 
     expect(document.body.innerHTML).not.toContain("a.gumroad-button");
@@ -19,7 +19,7 @@ test("shows iframe", () => {
             <body></body>
         </html>
     `;
-    
+
     let overlay = new Overlay("localhost");
     overlay.show("permalink");
 
@@ -36,7 +36,7 @@ test("removes iframe", () => {
             <body></body>
         </html>
     `;
-    
+
     let overlay = new Overlay("localhost");
 
     overlay.show("permalink");

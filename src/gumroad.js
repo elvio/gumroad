@@ -1,7 +1,7 @@
 import Link from "./link"
 import Overlay from "./overlay"
 
-function Gumroad(domains, domain) {  
+function Gumroad(domains, domain) {
   this.link = new Link(domains);
   this.overlay = new Overlay(domain);
 
@@ -10,7 +10,7 @@ function Gumroad(domains, domain) {
   });
 }
 
-Gumroad.init = function() {
+Gumroad.init = function () {
   new Gumroad(["gumroad.com", "gum.co"], "gumroad.com");
 }
 
