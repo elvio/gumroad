@@ -9,7 +9,7 @@ build:
 
 deploy: build purge_cache
 	aws s3 rm s3://gumroad.elviovicosa.com/index.html
-	aws s3 cp public/index.html s3://gumroad.elviovicosa.com/	
+	aws s3 sync --exact-timestamps public/ s3://gumroad.elviovicosa.com/	
 	aws s3 sync --exact-timestamps lib/ s3://gumroad.elviovicosa.com/lib/
 
 purge_cache:
